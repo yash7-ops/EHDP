@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,115,246,0.989233193277311) 0%, rgba(0,212,255,1) 100%);
+        }
+        a{
+            float: inline-end;padding-right: 15px;
+        }
+        body li{
+            list-style: none;
+        }
+        h2{
+            background-color: rgb(202, 229, 247);
+            font-weight: bold;
+            color: rgb(41, 82, 78);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1 align = "center" style="font-weight: bolder;" >About</h1>
+            <h2>Attributes</h2>
+    <p> <bold>Age</bold>: The person's age in years<br>
+        <bold>Sex</bold> : The person's sex<br>
+        <bold>Chest Pain</bold> : The chest pain experienced (0: typical angina, 1: atypical angina, 2: non-anginal pain, 3: asymptomatic)<br>
+        <bold>Resting Blood Pressure</bold>: The person's resting blood pressure (mm Hg)<br>
+        <bold>Cholestrol</bold> : The person's cholesterol measurement in mg/dl<br>
+        <bold>Blood Sugar</bold> : The person's fasting blood sugar <br>
+        <bold>Resting ECG</bold> : Resting electrocardiographic measurement (normal, having ST-T wave abnormality, showing probable or definite left ventricular hypertrophy by Estes' criteria)<br>
+        <bold>Max Heart Rate</bold> : The person's maximum heart rate achieved<br>
+        <bold>Agina</bold> : Exercise induced angina (yes; no)<br>
+        <bold>Oldpeak</bold> : ST depression induced by exercise relative to rest ('ST' relates to positions on the ECG plot.)<br>
+        <bold>Slope</bold> : the slope of the peak exercise ST segment (Value 0: upsloping, Value 1: flat, Value 2: downsloping)<br>
+        <bold>Thalassemia</bold> : A blood disorder called thalassemia (normal; fixed defect; reversable defect)<br>
+
+    <h2>Algorithm Used</h2>
+    <h3>Ensemble Learning</h3>
+    <p>Ensemble Learning
+        An Ensemble method is a technique that combines the predictions from multiple machine learning algorithms together to make more accurate predictions than any individual model. 
+        A model comprised of many models is called an Ensemble model.</p>
+    <h3>Random Forest Tree</h3>
+    <p>Random forest is a Supervised Learning algorithm which uses ensemble learning method for classification and regression.
+        Random forest is a bagging technique and not a boosting technique. The trees in random forests are run in parallel. There is no interaction between these trees while building the trees.
+        It operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.
+        A random forest is a meta-estimator (i.e. it combines the result of multiple predictions) which aggregates many decision trees, with some helpful modifications:
+        The number of features that can be split on at each node is limited to some percentage of the total (which is known as the hyperparameter). This ensures that the ensemble model does not rely too heavily on any individual feature, and makes fair use of all potentially predictive features.
+        Each tree draws a random sample from the original data set when generating its splits, adding a further element of randomness that prevents overfitting.<br>
+        results are aggregated, through model votes or averaging, into a single ensemble model that ends up outperforming any individual decision tree’s output.</p>
+    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

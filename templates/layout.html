@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='main.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,115,246,0.989233193277311) 0%, rgba(0,212,255,1) 100%);
+        }
+        a{
+            float: inline-end;padding-right: 15px;
+        }
+        body li{
+            list-style: none;
+        }
+
+    </style>
+    
+</head>
+<body class="w-100">
+    <div class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissable">
+        <button class="close" type="button" aria-hidden="true" data-dismiss="alert">x</button>
+        <li>{{ message }}</li>
+        </div>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+{% block body %} {% endblock %}
+</div>
+</body>
+</html>

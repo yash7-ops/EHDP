@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+<title>Result</title>
+
+{% block body %}
+<div class="page-header font-weight-bold text-center" style="padding-bottom: 30px;">
+    <h1>Result</h1>  
+</div>
+
+  
+<div class = "container ">
+    <table border="1" align="center" style="background-color: bisque; width: 180px;" >
+        <tr>
+            <td>{{form.age.label }}</td>  
+            <td>  {{form.age.data}}</td>
+        </tr>
+        <tr>
+            <td>{{ form.cholestrol.label }} </td>
+            <td>{{ form.cholestrol.data }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.restBP.label }} </td>
+            <td>{{ form.restBP.data }}</td>
+        </tr>
+        <tr>
+            <td> {{ form.bloodSugar.label }} </td>
+            {% if form.bloodSugar.data %}
+            <td>Yes</td>
+            {% else %}
+            <td>No</td>
+            {% endif %}
+        </tr>
+     <!--   <tr>
+            <td>{{ form.restEcg.label  }} </td>
+            <td>{{ form.restEcg.data }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.slope.label  }} </td>
+            <td>{{ form.slope.data }}</td>
+        </tr> -->
+
+    </table>
+    {% if val %}
+        <h1 class="container text-center" style="font-size: medium;">Chance of Occuring Heart Disease : YES</h1>
+    {% else %}
+        <h1 class = "container text-center font-italic">Chance of Occuring Heart Disease : NO</h1>
+    {% endif %}
+   
+</div>
+<div class="col-md-15 text-center">
+    <a style="background-color: blanchedalmond; margin-top: 15px;" href="{{url_for('home')}}" class="btn btn-default text-center btn">Go Home</a>
+    </div>
+    <!--
+        <p>{{form.age.label}} : {{form.age.data}}</p>
+    <p>{{ form.gender.label }} : {{ form.gender.data }}</p>
+    <p>{{ form.chestPain.label }} : {{ form.chestPain.data }}</p>
+    <p>{{ form.cholestrol.label }} :{{ form.cholestrol.data }}</p>
+    <p>{{ form.restBP.label }} :{{ form.restBP.data }}</p>
+    <p>{{ form.bloodSugar.label }} : {{ form.bloodSugar.data }}</p>
+    <p>{{ form.restEcg.label }}:{{ form.restEcg.data }}</p>
+    <p>{{ form.maxHeart.label }} : {{ form.maxHeart.data }}</p>
+    <p>{{ form.exang.label }}:{{ form.exang.data }}</p>
+    <p>{{ form.oldPeak.label }} : {{ form.oldPeak.data + 2 }}</p>
+    <p>{{ form.slope.label }} : {{ form.slope.data }}</p>
+    <p> {{ form.thal.label }} : {{ form.thal.data }}</p>
+        -->
+    
+    
+
+{% endblock %}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}">
+    <title>Home Page</title>
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover {
+        background-color:rgb(210, 250, 250);
+        text-decoration: none;
+        }
+
+        p{
+            font-size: 24px;
+            background-color: #FCEBB6;
+            text-align: center;
+            text-decoration-style: solid;
+            border: 30px;
+        }
+
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,115,246,0.989233193277311) 0%, rgba(0,212,255,1) 100%);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            }
+
+    </style>
+</head>
+<body>
+    <div class = "page-header">
+        <h1>Heart disease Prediction</h1>
+    </div>
+    <ul>
+        <li><a href="{{url_for('predict')}}">Predict</a></li>
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li style="float:right"><a href="{{url_for('logout')}}">Logout</a></li>
+    </ul>
+
+    <div id = "grad"> </div>
+    <div class="">
+    <p style="background-color: rgb(89, 168, 199); color: antiquewhite; padding-top: 20px;">World Health Organization has estimated 12 million deaths occur worldwide, every year due to Heart diseases. Half the deaths in the United States and other developed countries are due to cardio vascular diseases. The early prognosis of cardiovascular diseases can aid in making decisions on lifestyle changes in high risk patients and in turn reduce the complications. This web application will be able to predict the chances of heart-disease effectively using the reports obtained from the user. Data analytics is useful for prediction and it helps medical center to predict of various disease. Huge amount of patient related data is maintained. Machine Learning was more accurate than human medical professionals in predicting myocardial infarction (MI) or death among patients suspected of having coronary artery disease (CAD).The stored data can be useful for source of predicting the occurrence of future disease.</p>
+    
+    </div>
+   
+
+
+    
+</body>
+</html>
