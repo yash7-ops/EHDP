@@ -15,4 +15,4 @@ install the dependencies
 
 Run : flask run
 user : admin
-pwd  : same
+pwd  : admin
