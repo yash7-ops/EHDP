@@ -1,5 +1,4 @@
 # EHDP
-# EHDP
 Install requirements
 1. flask
 2. flask_wtf
